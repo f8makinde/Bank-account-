@@ -10,7 +10,7 @@ const intialStateCustomers ={
            return{
              ...state,fullName:action.payload.fullName, nationalId:action.payload.nationalId, createdAt:action.payload.createdAt
            };
-           case "account/updateName":
+           case "customer/updateName":
                return{
                    ...state, fullName:action.payload
                }
@@ -26,7 +26,7 @@ const intialStateCustomers ={
      return {type: 'customer/createCustomer', payload: {fullName, nationalId, createdAt: new Date().toISOString()}}
     }
     export function updateName(fullName){
-       return {type: "account/updateName", payload: fullName}
+       return {type: "customer/updateName", payload: fullName}
     }
    
    
