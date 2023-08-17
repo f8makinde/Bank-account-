@@ -38,3 +38,17 @@ button {
   min-width: 180px;
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .balance {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background-color: #f7f7f7;
+    padding: 12px 16px;
+    font-weight: bold;
+    font-size: 32px;
+    min-width: 100px;
+    text-align: center;
+  }
+}
